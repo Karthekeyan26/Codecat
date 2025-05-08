@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeCat Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav a {
+      color: rgb(255, 255, 255);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      height: 75vh;
+    }
+
+    .hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .section {
+      padding: 60px 20px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: #111;
+      border: 1px solid rgb(255, 230, 0);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 30px;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .cta-button {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #e6b800;
+    }
+
+    .content {
+      text-align: left;
+      margin: 0;
+      max-width: 100%;
+      line-height: 1.8;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    .content ul {
+      margin-top: 20px;
+    }
+
+    .content ul li {
+      padding: 10px 0;
+      list-style-type: none;
+    }
+
+    .email-link {
+      text-decoration: none;
+      color: #ffcc00;
+    }
+
+    h2, h3 {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="logo.png" alt="CodeCat Solutions" height="120"></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about-us">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#careers">Careers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <video autoplay muted loop playsinline>
+    <source src="hero-animation.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="section" id="about-us">
+  <div class="content">
+    <h2>About Us</h2>
+    <p>CodeCat Solutions was founded by Karthe and Hari, two childhood friends from Anthiyur, Tamil Nadu, who share a deep-rooted passion for technology and business. Their combined expertise in both areas inspired them to establish an IT firm that focuses on empowering small businesses with affordable, innovative software solutions.</p>
+
+    <p>At CodeCat, we understand the challenges faced by small-scale vendors in a competitive market. Unlike large tech firms that often overlook small businesses, we focus on providing tailored software solutions designed to streamline operations, increase efficiency, and drive growth for our clients.</p>
+
+    <p>Our mission is to bridge the gap between technology and small businesses. We believe that businesses of all sizes deserve access to powerful tools that are simple to use and budget-friendly. With a clear focus on affordability, usability, and customer satisfaction, we ensure that every solution we deliver helps businesses thrive without unnecessary complexity or cost.</p>
+
+    <h3>Our Unique Approach</h3>
+    <ul>
+      <li><strong>Affordable & Scalable Solutions:</strong> Our software is designed to meet the budgetary constraints of small businesses while providing scalable features that support growth.</li>
+      <li><strong>User-Centric Design:</strong> We prioritize simplicity, ensuring that our solutions are intuitive and easy for your team to adopt, even without technical expertise.</li>
+      <li><strong>Customizable to Fit Your Needs:</strong> Every business is unique, and so are our solutions. We offer customization options that tailor our software to your exact requirements.</li>
+      <li><strong>Dedicated Support:</strong> Our team is committed to your success, offering ongoing support and guidance to help you maximize the benefits of our software.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="customer-reviews">
+  <div class="content">
+    <h2>Customer Reviews</h2>
+    <p>"We got exactly what we needed — nothing more, nothing less. It saved both costs and reduced the complexity in handling our billing system." - <strong>Mysore Filter Coffee, Anthiyur</strong></p>
+    <p>"An all-in-one software that covers everything — GST, accounting, stock management, sales trends, and beautifully designed invoices. A complete package!" - <strong>Sri Karthekeyan Natural Oils, Patlur</strong></p>
+    <p>"The system makes it easy to search medicines by drug name, saving us time. It even syncs online to suggest alternative drugs — incredibly useful!" - <strong>Bharathy Medicals, Thavittupalayam</strong></p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">Web & App Development</div>
+    <div class="service-card">Cloud & DevOps</div>
+    <div class="service-card">AI/ML Solutions</div>
+    <div class="service-card">ERP & CRM Systems</div>
+    <div class="service-card">Cybersecurity</div>
+    <div class="service-card">Custom Software</div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="content">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to discuss how CodeCat Solutions can help your business, don't hesitate to get in touch. We're here to assist you every step of the way.</p>
+
+    <p><strong>Phone Numbers:</strong></p>
+    <p>+91 9894034448</p>
+    <p>+91 88255 03831</p>
+
+    <p><strong>Email:</strong></p>
+    <p><a href="mailto:team@codecatsolutions.com" class="email-link">team@codecatsolutions.com</a></p>
+
+    <p><strong>Office Address:</strong></p>
+    <p>CodeCat Solutions, 123 Business Avenue, Anthiyur, Tamil Nadu, India.</p>
+
+    <p>If you'd like to schedule a meeting or a demo of our software, please reach out, and we'll set up a convenient time to connect.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 CodeCat Solutions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
